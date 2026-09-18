@@ -1,0 +1,186 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+  font-family: "Courier New", monospace;
+  background: #0e031a;
+  color: #f1f5f9;
+  padding: 30px 20px;
+}
+
+/* Skills section */
+.skills-section {
+  max-width: 950px;
+  margin: auto;
+}
+
+/* Section heading */
+.section-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.section-heading h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.section-heading p {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* Three cards per row */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Skill cards */
+.skill-card {
+  background: #0b1728;
+  border: 1px solid #1e3a5f;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.12);
+}
+
+/* Technology icons */
+.skill-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111f33;
+  border: 1px solid #29415f;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Skill information */
+.skill-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-level {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+/* Skill level colors */
+.advanced {
+  color: #22c55e;
+}
+
+.proficient {
+  color: #a78bfa;
+}
+
+.intermediate {
+  color: #facc15;
+}
+
+.basic {
+  color: #38bdf8;
+}
+
+.beginner {
+  color: #60a5fa;
+}
+
+/* Tetris-style mastery blocks */
+.mastery-bars {
+  display: flex;
+  gap: 4px;
+}
+
+.block {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: #263750;
+  border: 1px solid #344863;
+}
+
+.block.active {
+  background: var(--skill-color);
+  border-color: var(--skill-color);
+  box-shadow: 0 0 6px var(--skill-glow);
+}
+
+/* Technology colors */
+.html {
+  --skill-color: #f97316;
+  --skill-glow: rgba(249, 115, 22, 0.4);
+}
+
+.css {
+  --skill-color: #3b82f6;
+  --skill-glow: rgba(59, 130, 246, 0.4);
+}
+
+.java {
+  --skill-color: #facc15;
+  --skill-glow: rgba(250, 204, 21, 0.4);
+}
+
+.javascript {
+  --skill-color: #facc15;
+  --skill-glow: rgba(250, 204, 21, 0.4);
+}
+
+.git {
+  --skill-color: #f97316;
+  --skill-glow: rgba(249, 115, 22, 0.4);
+}
+
+.python {
+  --skill-color: #38bdf8;
+  --skill-glow: rgba(56, 189, 248, 0.4);
+}
+
+.react {
+  --skill-color: #22d3ee;
+  --skill-glow: rgba(34, 211, 238, 0.4);
+}
+
+.sql {
+  --skill-color: #a78bfa;
+  --skill-glow: rgba(167, 139, 250, 0.4);
+}
+
+.cybersecurity {
+  --skill-color: #34d399;
+  --skill-glow: rgba(52, 211, 153, 0.4);
+}
+
+.linux {
+  --skill-color: #38bdf8;
+  --skill-glow: rgba(56, 189, 248, 0.4);
+}
+
